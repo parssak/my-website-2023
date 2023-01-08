@@ -336,16 +336,16 @@ export default function Page() {
                           key={item.title}
                           size="sm"
                           theme="info"
-                          className="py-size-2y leading-normal -mx-size-y px-size-y rounded text-theme-base ease-linear group-hover:bg-theme-active/20 group-hover:text-theme-active cursor-pointer"
+                          className="py-size-2y leading-normal -mx-size-y px-size-y rounded text-theme-base ease-linear group-hover:bg-theme-active/20 group-hover:text-theme-active cursor-pointer transition-all duration-[150ms]"
                         >
                           <span className="font-medium mr-2 block md:text-right xl:min-w-[12ch] sm:inline-block text-theme-active">
                             {item.title}
                           </span>{" "}
                           <span className="relative">
-                            <span className="text-theme-active/80 opacity-100 group-hover:opacity-0 ">
+                            <span className="text-theme-active/80 opacity-100 group-hover:opacity-0 transition-all duration-[150ms]">
                               {item.description}
                             </span>
-                            <span className="absolute left-0 group-hover:opacity-100 opacity-0 top-0 right-0 whitespace-nowrap sm:top-auto">
+                            <span className="absolute left-0 group-hover:opacity-100 opacity-0 top-0 right-0 whitespace-nowrap sm:top-auto transition-all duration-[150ms]">
                               check it out &rarr;
                             </span>
                           </span>
@@ -376,19 +376,27 @@ export default function Page() {
               If you want to chat, feel free to send me an email at{" "}
               <ExternalLink href="mailto:parssak@gmail.com">parssak@gmail.com</ExternalLink>. You
               can also find me on{" "}
-              <ExternalLink href="https://twitter.com/ParssaKyanzadeh">Twitter</ExternalLink>,{" "}
               <ExternalLink
-                href="
-              https://www.github.com/parssak/"
+                href="https://twitter.com/ParssaKyanzadeh"
+                imageHref="/preview/twitter-preview.png"
+              >
+                Twitter
+              </ExternalLink>
+              ,{" "}
+              <ExternalLink
+                imageHref="/preview/github-preview.png"
+                href="https://www.github.com/parssak/"
               >
                 GitHub
               </ExternalLink>
               , and{" "}
-              <ExternalLink href="https://www.linkedin.com/in/parssa-kyanzadeh-255a5a180/">
+              <ExternalLink
+                href="https://www.linkedin.com/in/parssa-kyanzadeh-255a5a180/"
+                imageHref="/preview/linkedin-preview.png"
+              >
                 LinkedIn
               </ExternalLink>
             </Text>
-            <Text></Text>
           </section>
         </div>
       </div>

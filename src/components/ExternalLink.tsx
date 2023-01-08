@@ -13,7 +13,7 @@ const Emojis = ({ didCopy }: { didCopy: boolean }) => {
     "📨",
     "📬",
     "📭",
-    "📮",
+    "🐥",
     "📪",
     "📫",
     "📥",
@@ -200,19 +200,21 @@ export const ExternalLink = ({
           {props.href.includes("mailto") && (
             <div
               data-theme={copied ? "success" : "info"}
-              className="h-36 bg-theme-base/100 group-hover:bg-theme-base/60 transition-colors duration-500"
+              className="h-36 relative"
             >
+              <div className="absolute inset-0 bg-gradient-to-t from-theme-base to-theme-base/20" />
+              <div className="absolute inset-0 bg-gradient-to-t from-theme-base saturate-200 dark:saturate-100 to-theme-active opacity-0 group-hover:opacity-100 transition-all duration-500" />
               <Emojis didCopy={copied} />
             </div>
           )}
           {props.href.includes("mailto") ? (
-            <div className="absolute inset-0 flex items-center justify-center flex-col gap-size-y saturate-0 opacity-80 group-hover:opacity-100 group-hover:saturate-100 ease-spring duration-500 pointer-events-none transition-all">
+            <div className="absolute z-10 inset-0 flex items-center justify-center flex-col gap-size-y saturate-0 opacity-90 group-hover:opacity-100 group-hover:saturate-100 ease-spring duration-500 pointer-events-none transition-all">
               <Button
                 size="sm"
                 theme="info"
                 dark
                 onClick={navigate}
-                className="pl-size-2x backdrop-blur pr-size-2x py-size-qy rounded-full bg-theme-base/50 transition-all hover:bg-theme-base cursor-pointer pointer-events-auto"
+                className="pl-size-2x backdrop-blur-lg pr-size-2x py-size-qy rounded-full bg-theme-base/90 transition-all hover:bg-theme-base cursor-pointer pointer-events-auto "
               >
                 Send Email
               </Button>
@@ -225,7 +227,7 @@ export const ExternalLink = ({
                   e.stopPropagation();
                   copy();
                 }}
-                className="pl-size-2x backdrop-blur pr-size-2x py-size-qy rounded-full bg-theme-base/50 transition-all hover:bg-theme-base cursor-pointer pointer-events-auto"
+                className="pl-size-2x backdrop-blur pr-size-2x py-size-qy rounded-full bg-theme-base/90 transition-all hover:bg-theme-base cursor-pointer pointer-events-auto"
               >
                 {copied ? "Copied Email!" : "Copy Email"}
               </Button>
