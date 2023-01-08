@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  @apply overflow-auto h-full;
+  @apply overflow-auto h-full relative;
 }
 
 @layer components {
@@ -51,4 +51,10 @@ body {
     color: unset;
     -webkit-text-fill-color: transparent;
   }
+}
+
+body::-webkit-scrollbar {
+  transform: translate3d(0, 0, 0);
+  width: 0.5rem;
+  height: 0.5rem;
 }

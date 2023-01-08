@@ -31,7 +31,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           }
         }}
       >
-        <div className="min-h-screen bg-theme-pure">
+        <div className="min-h-screen bg-theme-pure overflow-hidden">
           <Component {...pageProps} />
         </div>
       </UniversalUIConfigProvider>

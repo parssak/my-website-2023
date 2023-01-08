@@ -42,7 +42,7 @@ module.exports = {
       animation: {
         "ping-slow": "ping 3s cubic-bezier(0, 0, 0.2, 1) infinite",
         "hue-rotate": "hue-rotate 1s infinite linear",
-        "hue-rotate-reverse-slow": "hue-rotate-reverse 5s infinite linear"
+        "hue-rotate-reverse-slow": "hue-rotate-reverse 4s infinite linear"
       }
     },
     universalUI: {
