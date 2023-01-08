@@ -122,6 +122,8 @@ const ExternalLink = ({
             width={1457}
             height={918}
             src={imageHref}
+            placeholder="blur"
+            blurDataURL={imageHref}
             className="rounded object-cover w-full h-full transition-all group-hover:scale-110 ease-spring duration-500 group-hover:blur-md"
           />
         </a>
