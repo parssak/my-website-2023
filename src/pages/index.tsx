@@ -150,7 +150,7 @@ const things = [
     text: (
       <>
         Lead frontend engineer & designer{" "}
-        <ExternalLink imageHref="/preview/fig-preview.png" href="https://www.fig.io">
+        <ExternalLink imageHref="/preview/fig-preview.webp" href="https://www.fig.io">
           @fig
         </ExternalLink>
         {/*  md:inline */}
@@ -164,7 +164,7 @@ const things = [
       <>
         Building an open-source{" "}
         <ExternalLink
-          imageHref="/preview/universal-preview.png"
+          imageHref="/preview/universal-preview.webp"
           href="
       https://universal-ui.vercel.app"
         >
@@ -417,7 +417,7 @@ export default function Page() {
               at fig and working on{" "}
               <ExternalLink
                 className="font-medium"
-                imageHref="/preview/universal-preview.png"
+                imageHref="/preview/universal-preview.webp"
                 href="https://universal-ui.vercel.app"
               >
                 universal-ui
