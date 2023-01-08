@@ -26,7 +26,8 @@ function MyApp({ Component, pageProps }: AppProps) {
                 classes += ' font-medium text-2xl'
               }
               return classes;
-            }
+            },
+            // 'card.content': 'px-5'
           }
         }}
       >

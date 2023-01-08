@@ -9,10 +9,46 @@ strong {
   @apply font-medium;
 }
 
+html {
+  @apply overflow-hidden h-full dark:bg-black;
+}
 
+body {
+  @apply overflow-auto h-full;
+}
 
 @layer components {
   .container {
     @apply max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8;
+  }
+
+  .grain {
+    background-image: url("/grain.png");
+    background-repeat: repeat;
+    background-size: 300px;
+  }
+
+  .gradient-text {
+    background: linear-gradient(
+      to right bottom,
+      rgb(var(--color-text-base) / 1) 60%,
+      rgb(var(--color-text-muted) / 0.5)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: unset;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .gradient-text-subtle {
+    background: linear-gradient(
+      to right bottom,
+      rgb(var(--color-text-base)) 10%,
+      rgb(var(--color-text-muted) / 0.9)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: unset;
+    -webkit-text-fill-color: transparent;
   }
 }
