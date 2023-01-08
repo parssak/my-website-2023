@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ["Inter", "sans-serif"],
-      mono: ["JetBrains Mono", "monospace"]
+      mono: ["JetBrains Mono", "monospace"],
     },
     container: {
       padding: {
@@ -18,6 +18,11 @@ module.exports = {
         xl: "5rem"
       },
       center: true
+    },
+    extend: {
+      transitionTimingFunction: {
+        spring: "cubic-bezier(.175,.885,.32,1.275)"
+      }
     }
   },
   variants: {},

@@ -1,7 +1,18 @@
-@import 'https://rsms.me/inter/inter.css'; 
+@import "https://rsms.me/inter/inter.css";
 @import url("https://dev-cats.github.io/code-snippets/JetBrainsMono.css");
 
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
+strong {
+  @apply font-medium;
+}
+
+
+
+@layer components {
+  .container {
+    @apply max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8;
+  }
+}
