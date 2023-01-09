@@ -37,10 +37,10 @@ const things = [
     emoji: "✨",
     text: "Obsessed with intuitive & delightful interfaces"
   },
-  {
-    emoji: "📍",
-    text: "Based in Toronto, Canada"
-  }
+  // {
+  //   emoji: "📍",
+  //   text: "Based in Toronto, Canada"
+  // }
 ];
 
 const projects = [
